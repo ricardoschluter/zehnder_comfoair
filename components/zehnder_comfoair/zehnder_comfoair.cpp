@@ -1,5 +1,5 @@
 #include "esphome/core/log.h"
-#include "ezehnder_comfoair.h"
+#include "zehnder_comfoair.h"
 
 namespace esphome {
 namespace zehnder_comfoair {
