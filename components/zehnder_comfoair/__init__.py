@@ -6,7 +6,7 @@ from esphome.const import CONF_ID
 DEPENDENCIES = ['uart']
 
 empty_uart_component_ns = cg.esphome_ns.namespace('esphome')
-EmptyUARTComponent = empty_uart_component_ns.class_('EmptyUARTComponent', cg.Component, uart.UARTDevice)
+EmptyUARTComponent = empty_uart_component_ns.class_('EmptyUARTComponent', cg.PollingComponent, uart.UARTDevice)
 
 CONFIG_SCHEMA = cv.Schema({
     cv.GenerateID(): cv.declare_id(EmptyUARTComponent)
