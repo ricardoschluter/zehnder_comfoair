@@ -10,7 +10,7 @@ void Comfoair::setup() {
 
 }
 
-void Comfoair::update() {
+void Comfoair::loop() {
     ESP_LOGD(TAG,"test");
 }
 

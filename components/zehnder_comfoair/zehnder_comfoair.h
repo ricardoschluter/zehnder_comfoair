@@ -10,7 +10,7 @@ class Comfoair : public uart::UARTDevice, public Component {
  public:
   Comfoair(UARTComponent *parent) : UARTDevice(parent) {}
   void setup() override;
-  void update() override;
+  void loop() override;
   void dump_config() override;
 };
 
