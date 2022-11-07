@@ -8,6 +8,7 @@ namespace empty_uart_component {
 
 class EmptyUARTComponent : public uart::UARTDevice, public Component {
   public:
+    EmptyUARTComponent(UARTComponent *parent) : UARTDevice(parent) {}
     void setup() override;
     void loop() override;
     void dump_config() override;
