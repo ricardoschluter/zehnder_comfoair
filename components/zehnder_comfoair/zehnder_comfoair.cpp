@@ -7,11 +7,11 @@
 
 namespace esphome {
     namespace zehnder_comfoair{
-        class ZehnderProtocolClass
+        class zehnder_comfoair::ZehnderProtocolClass
         {
 
         }
-        class ComfoAir: public PollingComponent, public Sensor
+        class zehnder_comfoair::ComfoAir: public PollingComponent, public Sensor
         {
             public:
               ComfoAir() : PollingComponent(10000){}
