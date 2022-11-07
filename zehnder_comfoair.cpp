@@ -17,7 +17,7 @@ namespace esphome {
               ComfoAir() : PollingComponent(10000){}
               void setup() override{}
               void update() override{
-                ESP_LOGD("Logging");
+                ESP_LOGD("Logging stuff");
               }
         }
     }

@@ -1,8 +1,5 @@
 #pragma once
 
-#include <string>
-#include "zehnder_comfoair.h"
-
 namespace esphome {
     namespace zehnder_comfoair{
         class ZehnderProtocolClass
