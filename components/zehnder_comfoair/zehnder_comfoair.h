@@ -5,10 +5,11 @@
 namespace esphome {
 namespace zehnder_comfoair {
 
-class Comfoair : public Component {
+class Comfoair : public PollingComponent {
  public:
+  Comfoair() : PollingComponent(15000) {}
   void setup() override;
-  void loop() override;
+  void update() override;
   void dump_config() override;
 };
 
