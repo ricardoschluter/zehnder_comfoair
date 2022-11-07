@@ -9,9 +9,9 @@ void EmptyUARTComponent::setup() {
 }
 
 void EmptyUARTComponent::loop() {
-    ESP_LOGD(TAG,"Logging stuffe");
+    //ESP_LOGD(TAG,"Logging stuffe");
 }
 
 void EmptyUARTComponent::dump_config(){
-    ESP_LOGCONFIG(TAG, "Empty UART component");
+    //ESP_LOGCONFIG(TAG, "Empty UART component");
 }

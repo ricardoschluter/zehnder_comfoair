@@ -2,7 +2,6 @@
 
 #include "esphome.h"
 #include "esphome/core/component.h"
-#include "esphome/core/log.h"
 #include "esphome/components/uart/uart.h"
 
 class EmptyUARTComponent : public Component, public UARTDevice {
