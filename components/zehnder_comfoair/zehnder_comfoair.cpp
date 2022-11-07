@@ -1,19 +1,22 @@
 #include "esphome/core/log.h"
-#include "zehnder_comfoair.h"
+#include "empty_uart_component.h"
 
 namespace esphome {
+namespace empty_uart_component {
 
-static const char *TAG = "zehnder_comfoair.component";
+static const char *TAG = "empty_uart_component.component";
 
-void Comfoair::setup() {
+void EmptyUARTComponent::setup() {
 
 }
 
-void Comfoair::loop() {
-    ESP_LOGD(TAG,"test");
+void EmptyUARTComponent::loop() {
+    ESP_LOGD(TAG,"Logging stuffe");
 }
 
-void Comfoair::dump_config(){
-    ESP_LOGCONFIG(TAG, "Comfoair component");
+void EmptyUARTComponent::dump_config(){
+    ESP_LOGCONFIG(TAG, "Empty UART component");
 }
-}  
+
+}  // namespace empty_uart_component
+}  // namespace esphome

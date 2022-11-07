@@ -3,16 +3,16 @@
 #include "esphome/core/component.h"
 #include "esphome/components/uart/uart.h"
 
-using namespace esphome::uart;
-
 namespace esphome {
+namespace empty_uart_component {
 
-class Comfoair : public UARTDevice, public Component {
- public:
-  Comfoair(UARTComponent *parent) : UARTDevice(parent) {}
-  void setup() override;
-  void loop() override;
-  void dump_config() override;
+class EmptyUARTComponent : public uart::UARTDevice, public Component {
+  public:
+    void setup() override;
+    void loop() override;
+    void dump_config() override;
 };
 
+
+}  // namespace empty_uart_component
 }  // namespace esphome
