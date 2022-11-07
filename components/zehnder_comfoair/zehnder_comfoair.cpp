@@ -1,5 +1,5 @@
 #include "esphome/core/log.h"
-#include "empty_component.h"
+#include "ezehnder_comfoair.h"
 
 namespace esphome {
 namespace zehnder_comfoair {
@@ -19,5 +19,5 @@ void Comfoair::dump_config(){
 }
 
 
-}  // namespace empty_component
-}  // namespace esphome
+}  
+}  
