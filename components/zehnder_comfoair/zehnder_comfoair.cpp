@@ -1,17 +1,23 @@
-#pragma once
-
-#include <string>
-#include "esphome.h"
 #include "esphome/core/log.h"
-#include "zehnder_comfoair.h"
+#include "empty_component.h"
 
 namespace esphome {
-    namespace zehnder_comfoair{
-        void ComfoAir::setup() override{}
-        void ComfoAir::update() override{
-           publish_state(42.0);
-           ESP_LOGD("custom","Logging stuff");
-          }
-        }
-    }
+namespace empty_component {
+
+static const char *TAG = "empty_component.component";
+
+void EmptyComponent::setup() {
+
 }
+
+void EmptyComponent::loop() {
+
+}
+
+void EmptyComponent::dump_config(){
+    ESP_LOGCONFIG(TAG, "Empty component");
+}
+
+
+}  // namespace empty_component
+}  // namespace esphome

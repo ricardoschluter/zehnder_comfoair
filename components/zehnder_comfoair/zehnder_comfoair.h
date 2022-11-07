@@ -1,19 +1,17 @@
 #pragma once
 
-#include "esphome.h"
+#include "esphome/core/component.h"
 
 namespace esphome {
-    namespace zehnder_comfoair{
-        class zehnder_comfoair::ZehnderProtocolClass
-        {
+namespace empty_component {
 
-        }
-        class zehnder_comfoair::ComfoAir: public PollingComponent, public Sensor
-        {
-            public:
-              ComfoAir() : PollingComponent(10000){}
-              void setup() override{}
-              void update() override{}
-        }
-    }
-}
+class EmptyComponent : public Component {
+ public:
+  void setup() override;
+  void loop() override;
+  void dump_config() override;
+};
+
+
+}  // namespace empty_component
+}  // namespace esphome
