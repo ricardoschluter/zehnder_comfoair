@@ -4,10 +4,10 @@
 #include "esphome/core/component.h"
 #include "esphome/components/uart/uart.h"
 
-class EmptyUARTComponent : public UARTDevice, public Component {
+class EmptyUARTComponent : public Component, public UARTDevice {
   public:
     EmptyUARTComponent(UARTComponent *parent) : UARTDevice(parent){}
-     Sensor *distance_sensor = new Sensor();
+    Sensor *distance_sensor = new Sensor();
     void setup() override;
     void loop() override;
     void dump_config() override;
