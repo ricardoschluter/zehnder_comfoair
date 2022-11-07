@@ -8,7 +8,7 @@ namespace zehnder_comfoair {
 
 class Comfoair : public uart::UARTDevice, public PollingComponent {
  public:
-  Comfoair(UARTComponent *parent) : UARTDevice(parent), PollingComponent(15000) {}
+  Comfoair() : UARTDevice(parent), PollingComponent(15000) {}
   void setup() override;
   void update() override;
   void dump_config() override;
