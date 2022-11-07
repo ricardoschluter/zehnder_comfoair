@@ -1,12 +1,12 @@
 #pragma once
 
-namespace esphome {
-    namespace zehnder_comfoair{
-        class zehnder_comfoair::ZehnderProtocolClass
+#include "esphome.h"
+
+        class ZehnderProtocolClass
         {
 
         }
-        class zehnder_comfoair::ComfoAir: public PollingComponent
+        class ComfoAir: public PollingComponent, public Sensor
         {
             public:
               ComfoAir() : PollingComponent(10000){}
