@@ -3,9 +3,9 @@
 #include "esphome/core/component.h"
 
 namespace esphome {
-namespace empty_component {
+namespace zehnder_comfoair {
 
-class EmptyComponent : public Component {
+class Comfoair : public Component {
  public:
   void setup() override;
   void loop() override;

@@ -2,20 +2,20 @@
 #include "empty_component.h"
 
 namespace esphome {
-namespace empty_component {
+namespace zehnder_comfoair {
 
-static const char *TAG = "empty_component.component";
+static const char *TAG = "zehnder_comfoair.component";
 
-void EmptyComponent::setup() {
-
-}
-
-void EmptyComponent::loop() {
+void Comfoair::setup() {
 
 }
 
-void EmptyComponent::dump_config(){
-    ESP_LOGCONFIG(TAG, "Empty component");
+void Comfoair::loop() {
+
+}
+
+void Comfoair::dump_config(){
+    ESP_LOGCONFIG(TAG, "Comfoair component");
 }
 
 
