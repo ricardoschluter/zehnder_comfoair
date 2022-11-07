@@ -1,4 +1,4 @@
-#include "esphome/core/log.h"
+
 #include "zehnder_comfoair.h"
 
 
