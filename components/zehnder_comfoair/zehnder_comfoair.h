@@ -3,10 +3,12 @@
 #include "esphome/core/component.h"
 #include "esphome/components/uart/uart.h"
 
+using namespace esphome::uart;
+
 namespace esphome {
 namespace zehnder_comfoair {
 
-class Comfoair : public uart::UARTDevice, public Component {
+class Comfoair : public UARTDevice, public Component {
  public:
   Comfoair(UARTComponent *parent) : UARTDevice(parent) {}
   void setup() override;
