@@ -5,7 +5,7 @@ from esphome.const import CONF_ID
 
 DEPENDENCIES = ['uart']
 
-empty_component_ns = cg.esphome_ns.namespace('zehnder_comfoair')
+empty_component_ns = cg.esphome_ns.namespace('esphome')
 Comfoair  = empty_component_ns.class_('Comfoair ', cg.Component,  uart.UARTDevice)
 
 CONFIG_SCHEMA = cv.Schema({

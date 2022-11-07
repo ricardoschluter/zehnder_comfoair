@@ -6,7 +6,6 @@
 using namespace esphome::uart;
 
 namespace esphome {
-namespace zehnder_comfoair {
 
 class Comfoair : public UARTDevice, public Component {
  public:
@@ -16,6 +15,4 @@ class Comfoair : public UARTDevice, public Component {
   void dump_config() override;
 };
 
-
-}  // namespace empty_component
 }  // namespace esphome
